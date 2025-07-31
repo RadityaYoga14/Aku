@@ -1,0 +1,299 @@
+/* UNIVERSAL SELECTOR */
+* { 
+    margin: 0;/*memberikan jarak di luar elemen*/
+    padding: 0;/*memberikan jarak di dalam elemen*/
+    box-sizing: border-box;/*mengatur cara ukuran elemen dihitung*/
+    font-family: 'Segoe UI', sans-serif;/*mengubah keseluruhan font di halaman web*/
+}
+
+/* TAG SELECTOR */
+body {
+    background: linear-gradient(to bottom, #76b9fc, #deeffd);/*mengubah warna background*/
+    margin-top: 50px; /*memberikan jarak di luar elemen bagian atas*/
+    padding: 20px;/*memberikan jarak di dalam elemen*/
+    color: #333;/*mengubah warna elemen*/
+}
+/* Hide scrollbar for all browsers */
+/* body {
+    scrollbar-width: none; Firefox
+    -ms-overflow-style: none; IE and Edge
+} */
+
+/* untuk menghilangkan scrollbar */
+body::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+}
+
+h1, h2 {/*untuk memodifikasi judul & subjudul;*/
+    color: #2c3e50;/*mengubah warna elemen*/
+}
+
+/* ID SELECTOR */
+#main-container {
+    place-self: center;/**/
+    background-color: #ffffff95;/*mengubah warna latar belakang*/
+    padding: 25px;/*memberikan jarak di dalam elemen*/
+    margin-bottom: 20px;/*memberikan jarak di luar elemen bagian bawah*/
+    border-radius: 12px;/*digunakan untuk membulatkan sudut² elemen*/
+    width: 46vw;/*menentukan lebar sebuah elemen*/
+    box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.215);/*untuk memberikan efek bayangan di luar elemen*/
+}
+
+#header, #footer {
+    text-align: center;/*mengatur posisi text*/
+    margin-bottom: 20px;/*memberikan jarak di luar elemen bagian bawah*/
+    position: relative;/*mengatur posisi elemen*/
+    z-index: 2;/*mengatur urutan tumpukan elemen*/
+}
+
+/* CLASS SELECTORS */
+.judul {
+    font-size: 32px;/*mengubah ukuran teks*/
+    margin-bottom: 10px;/*memberikan jarak di luar elemen bagian bawah*/
+}
+
+.deskripsi {
+    font-size: 16px;/*mengubah ukuran teks*/
+    color: #666;/*mengubah warna elemen*/
+}
+
+.foto-container {
+    text-align: center;/*mengatur posisi text*/
+    margin-bottom: 20px;/*memberikan jarak di luar elemen bagian bawah*/
+}
+
+.foto-profil {
+    border-radius: 50%;/*digunakan untuk membulatkan sudut² elemen*/
+    width: 150px;/*menentukan lebar elemen*/
+    height: 150px;/*menentukan tinggi elemen*/
+    object-fit: cover;/*mengontrol bagaimana suatu elemen agar menyesuaikan dengan ukuran elemen induknya*/
+    border: 3px solid #3498db;/*membuat garis batas di sekitar elemen*/
+}
+
+.tabel-biodata {
+    width: 100%;/*menentukan lebar elemen*/
+    margin: auto;/*memberikan jarak di luar elemen bagian atas dan bawah*/
+    border-collapse: collapse;/*mengontrol bagaimana batas² pada tabel ditampilkan*/
+    font-size: 16px;/*mengubah ukuran teks*/
+}
+
+.label {
+    font-weight: bold;/*mengubah ketebalan teks*/
+    width: 150px;/*menentukan lebar elemen*/
+    color: #2d3436;/*mengubah warna elemen*/
+    padding: 8px;/*memberikan jarak pada elemen*/
+}
+
+.section-box {
+    place-self: center;/*mengatur dimana letak elemen berada*/
+    background-color: #ffffff95;/*mengubah warna latar belakang*/
+    padding: 20px;/*memberikan jarak di dalam elemen*/
+    margin-bottom: 20px;/*memberikan jarak di luar elemen bagian bawah*/
+    border-radius: 10px;/*digunakan untuk membulatkan sudut² elemen*/
+    width: 46vw;/*menentukan lebar sebuah elemen*/
+    box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.215);/*untuk memberikan efek bayangan di luar elemen*/
+}
+
+.subjudul {
+    margin-bottom: 12px;/*memberikan jarak di luar elemen bagian bawah*/
+}
+
+.list-hobi li {
+    list-style: circle;/*mengubah jenis bullet pada list*/
+    margin-left: 20px;/*memberikan jarak di luar elemen bagian kiri*/
+    margin-bottom: 6px;/*memberikan jarak di luar elemen bagian bawah*/
+}
+
+.tautan {
+    color: #2980b9;/*mengubah warna elemen*/
+    text-decoration: none;/*menghilangkan garis bawah pada teks*/
+    font-weight: bold;/*mengubah ketebalan teks*/
+}
+
+.tautan:hover {
+    text-decoration: underline;/*mengubah garis bawah pada teks saat hover*/
+}
+
+.form-kontak {
+    display: flex;/*mengatur tampilan elemen menjadi flex*/
+    flex-direction: column;/*mengatur arah flex menjadi kolom*/
+    gap: 10px;/*memberikan jarak antar elemen*/
+}
+
+.form-kontak input,
+.form-kontak textarea {
+    padding: 10px;/*memberikan jarak di dalam elemen*/
+    border: 1px solid #ccc;/*mengubah warna batas elemen*/
+    border-radius: 6px;/*digunakan untuk membulatkan sudut² elemen*/
+}
+
+.form-kontak button {
+    background-color: #3498db;/*mengubah warna latar belakang*/
+    color: white;/*mengubah warna teks*/
+    padding: 10px;/*memberikan jarak di dalam elemen*/
+    border: none;/*menghilangkan batas pada elemen*/
+    border-radius: 6px;/*digunakan untuk membulatkan sudut² elemen*/
+    cursor: pointer;/*mengubah kursor saat hover*/
+}
+
+.form-kontak button:hover {
+    background-color: #2980b9;/*mengubah warna latar belakang saat hover*/
+}
+
+#footer {
+    font-size: 14px;/*mengubah ukuran teks*/
+    color: #888;/*mengubah warna teks*/
+    padding-top: 20px;/*memberikan jarak di dalam elemen*/
+}
+
+/* CSS untuk animasi awan di halaman web */
+.sky {
+    width: 100%;/*menentukan lebar sebuah elemen*/
+    height: 100%;/*menentukan tinggi sebuah elemen*/
+}
+.sky {
+    z-index: 0;/*mengatur urutan tumpukan elemen*/
+}
+
+#main-container, .section-box {
+    position: relative;/*mengatur posisi elemen*/
+    z-index: 2;/*mengatur urutan tumpukan elemen*/
+}
+
+.cloud {
+    z-index: 1;/*mengatur urutan tumpukan elemen*/
+}
+
+/* Style dasar untuk awan */
+.cloud {
+    position: absolute;/*mengatur posisi elemen*/
+    background: white;/*mengatur warna background elemen*/
+    border-radius: 50%;/*digunakan untuk membulatkan sudut² elemen*/
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);/*untuk memberikan efek bayangan di luar elemen*/
+}
+
+/* Komponen awan (bulatan-bulatan pembentuk awan) */
+.cloud:before, .cloud:after {
+    content: '';
+    position: absolute;/*mengatur posisi elemen*/
+    background: white;/*mengatur warna background elemen*/
+    border-radius: 50%;/*digunakan untuk membulatkan sudut² elemen*/
+}
+
+/* Animasi untuk awan */
+@keyframes float { /* Animasi untuk menggerakkan awan dari kiri ke kanan */
+    0% {
+        transform: translateX(0); /* Memulai dari posisi awal */
+    }
+    100% {
+        transform: translateX(calc(100vw + 200px)); /* Bergerak ke kanan melewati layar */
+    }
+}
+
+/* Cloud 1 - Awan besar */
+.cloud1 {
+    width: 150px; /*menentukan lebar sebuah elemen*/
+    height: 60px; /*menentukan tinggi sebuah elemen*/
+    top: 15%; /*menentukan posisi vertikal elemen*/
+    left: -200px; /*menentukan posisi horizontal elemen*/
+    animation: float 20s linear infinite; /* Animasi awan bergerak */
+}
+
+.cloud1:before {
+    width: 70px; /*menentukan lebar sebuah elemen*/
+    height: 70px; /*menentukan tinggi sebuah elemen*/
+    top: -30px; /*menentukan posisi vertikal elemen*/
+    left: 20px; /*menentukan posisi horizontal elemen*/
+}
+
+.cloud1:after {
+    width: 50px; /*menentukan lebar sebuah elemen*/
+    height: 50px; /*menentukan tinggi sebuah elemen*/
+    top: -20px; /*menentukan posisi vertikal elemen*/
+    right: 20px; /*menentukan posisi horizontal elemen*/
+}
+
+/* Cloud 2 - Awan sedang */
+.cloud2 {
+    width: 100px; /*menentukan lebar sebuah elemen*/
+    height: 40px; /*menentukan tinggi sebuah elemen*/
+    top: 30%; /*menentukan posisi vertikal elemen*/
+    left: -200px; /*menentukan posisi horizontal elemen*/
+    animation: float 15s linear infinite 2s; /* Animasi awan bergerak */
+}
+
+.cloud2:before {
+    width: 50px; /*menentukan lebar sebuah elemen*/
+    height: 50px; /*menentukan tinggi sebuah elemen*/
+    top: -20px; /*menentukan posisi vertikal elemen*/
+    left: 15px; /*menentukan posisi horizontal elemen*/
+}
+
+.cloud2:after {
+    width: 30px; /*menentukan lebar sebuah elemen*/
+    height: 30px; /*menentukan tinggi sebuah elemen*/
+    top: -15px; /*menentukan posisi vertikal elemen*/
+    right: 15px; /*menentukan posisi horizontal elemen*/
+}
+
+/* Cloud 3 - Awan kecil */
+.cloud3 {
+    width: 70px; /*menentukan lebar sebuah elemen*/
+    height: 30px; /*menentukan tinggi sebuah elemen*/
+    top: 45%; /*menentukan posisi vertikal elemen*/
+    left: -200px; /*menentukan posisi horizontal elemen*/
+    animation: float 30s linear infinite 4s; /* Animasi awan bergerak */
+}
+
+.cloud3:before {
+    width: 30px; /*menentukan lebar sebuah elemen*/
+    height: 30px; /*menentukan tinggi sebuah elemen*/
+    top: -15px; /*menentukan posisi vertikal elemen*/
+    left: 10px; /*menentukan posisi horizontal elemen*/
+}
+
+/* Cloud 4 - Awan besar kedua */
+.cloud4 {
+    width: 120px; /*menentukan lebar sebuah elemen*/
+    height: 50px; /*menentukan tinggi sebuah elemen*/
+    top: 60%; /*menentukan posisi vertikal elemen*/
+    left: -200px; /*menentukan posisi horizontal elemen*/
+    animation: float 25s linear infinite 1s; /* Animasi awan bergerak */
+}
+
+.cloud4:before {
+    width: 60px; /*menentukan lebar sebuah elemen*/
+    height: 60px; /*menentukan tinggi sebuah elemen*/
+    top: -25px; /*menentukan posisi vertikal elemen*/
+    left: 15px; /*menentukan posisi horizontal elemen*/
+}
+
+.cloud4:after {
+    width: 40px; /*menentukan lebar sebuah elemen*/
+    height: 40px; /*menentukan tinggi sebuah elemen*/
+    top: -15px; /*menentukan posisi vertikal elemen*/
+    right: 15px; /*menentukan posisi horizontal elemen*/
+}
+
+/* Cloud 5 - Awan sedang kedua */
+.cloud5 {
+    width: 90px; /*menentukan lebar sebuah elemen*/
+    height: 35px; /*menentukan tinggi sebuah elemen*/
+    top: 75%; /*menentukan posisi vertikal elemen*/
+    left: -200px; /*menentukan posisi horizontal elemen*/
+    animation: float 18s linear infinite 3s; /* Animasi awan bergerak */
+}
+
+.cloud5:before {
+    width: 40px; /*menentukan lebar sebuah elemen*/
+    height: 40px; /*menentukan tinggi sebuah elemen*/
+    top: -18px; /*menentukan posisi vertikal elemen*/
+    left: 12px; /*menentukan posisi horizontal elemen*/
+}
+
+.cloud5:after {
+    width: 25px; /*menentukan lebar sebuah elemen*/
+    height: 25px; /*menentukan tinggi sebuah elemen*/
+    top: -12px; /*menentukan posisi vertikal elemen*/
+    right: 12px; /*menentukan posisi horizontal elemen*/
+}

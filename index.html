@@ -1,0 +1,110 @@
+<!DOCTYPE html> <!--Menentukan jenis dokumen sebagai HTML5-->
+<html lang="id"> <!--Awal html dengan bahasa indonesia-->
+<head> <!--Bagian head untuk metadata dan link-->
+    <meta charset="UTF-8"> <!--Menentukan karakter encoding-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Responsive layout di perangakat-->
+    <title>Biodata Lengkap Siswa</title> <!--nama dari tab browser-->
+    <link rel="stylesheet" href="style.css"> <!--untuk menghubungkan dengan file css external-->
+</head>
+<body> <!--bagian yang akan ditampilkan di web-->
+
+    <!-- Header -->
+    <header id="header"> <!--bagian header, diberi id agar bisa di styling dengan khusus-->
+        <h1 class="judul">Biodata Diri Siswa</h1> <!--judul utama dari halaman web-->
+        <p class="deskripsi">Halaman ini menampilkan informasi lengkap tentang siswa RPL</p> <!--deskripsi singkat halaman  web-->
+    </header>
+
+    <br><br><br>
+
+    <!-- Biodata Siswa -->
+    <section id="main-container"> <!--untuk mengelompokan tag2 html menjadi satu kelompok, serta diberi id agar bisa di styling khusus-->
+        <div class="foto-container"> <!--kegunaannya sama seperti section-->
+            <img src="Foto Bio.jpeg" alt="Foto Profil" class="foto-profil"> <!--sebuah tag foto, alt digunakan untuk menampilkan deskripsi foto, class digunakan agar bisa di styling khusus-->
+        </div>
+        
+        <table class="tabel-biodata"> <!--tag tabel yang akan membuat tabel pada html-->
+            <tr> <!--untuk membuat kolom tabel-->
+                <td class="label">Nama</td> <!--untuk membuat baris tabel, diberi class agar bisa di styling khsus-->
+                <td>: Radit</td>
+            </tr>
+            <tr>
+                <td class="label">NIS</td>
+                <td>: 7145</td>
+            </tr>
+            <tr>
+                <td class="label">Kelas</td>
+                <td>: XI RPL 4</td>
+            </tr>
+            <tr>
+                <td class="label">Alamat</td>
+                <td>: Jl. Tunjung II No. 15</td>
+            </tr>
+            <tr>
+                <td class="label">Tanggal Lahir</td>
+                <td>: 14 Desember 2008</td>
+            </tr>
+        </table>
+    </section>
+    
+    <!-- awan -->
+    <div class="sky"> <!--untuk membuat latar belakang langit-->
+        <div class="cloud cloud1"></div> <!--untuk membuat awan-->
+        <div class="cloud cloud2"></div> <!--untuk membuat awan-->
+        <div class="cloud cloud3"></div> <!--untuk membuat awan-->
+        <div class="cloud cloud4"></div> <!--untuk membuat awan-->
+        <div class="cloud cloud5"></div> <!--untuk membuat awan-->
+    </div>
+    
+    <!-- Hobi dan Minat -->
+    <section class="section-box">
+        <h2 class="subjudul">Hobi & Minat</h2> <!--sub judul halaman web-->
+        <ul class="list-hobi"> <!--sebuah tag list tak berurut(unordered list)--> 
+            <li>Ngoding</li> <!--bagian-bagian di dalam sebuah list-->
+            <li>Nonton Drakor</li> <!--bagian-bagian di dalam sebuah list-->
+            <li>Nonton Film</li> <!--bagian-bagian di dalam sebuah list-->
+            <li>Bermain Game</li> <!--bagian-bagian di dalam sebuah list-->
+            <li>Bermain Badminton</li> <!--bagian-bagian di dalam sebuah list-->
+        </ul>
+    </section>
+
+    <!-- Link Media Sosial -->
+    <section class="section-box"> <!--untuk mengelompokan tag2 html menjadi satu kelompok, serta diberi class agar bisa di styling khusus-->
+        <h2 class="subjudul">Media Sosial</h2> <!--subjudul halaman web-->
+        <p>Kunjungi profil saya:</p> <!--tag paragraph-->
+        <a href="https://www.instagram.com/yogaraditya44/" target="_blank" class="tautan">Instagram</a> | <!--sebuah tag link menuju profil instagram, menggunakan target="blank_" agar saat di klik maka akan membuka tab browser baru-->
+        <a href="https://github.com/Ryzel1139" target="_blank" class="tautan">GitHub</a> <!--tag link menuju profil github, menggunakan target="blank_" agar saat di klik maka akan membuka tab browser baru-->
+    </section>
+    
+    <!-- Musik dan Film Favorit -->
+    <section class="section-box"> <!--untuk mengelompokan tag2 html menjadi satu kelompok, serta diberi class agar bisa di styling khusus-->
+        <h2>Fav Music & Fav Movie</h2> <!--subjudul halaman web-->
+        <br>
+        
+        <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/6r0dX00CXAoo69P2rMNWbP?utm_source=generator" width="100%" height="152vh" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe> <!--embed spotify player, untuk memutar musik favorit-->
+        <br>
+        
+        <iframe width="100%" height="300vh" style="border-radius: 12px;" src="https://www.youtube.com/embed/YLorLVa95Xo" title="Marvel&#39;s Iron Man 3 Domestic Trailer 2 (OFFICIAL)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> <!--embed youtube player, untuk memutar film favorit-->
+        <br>
+    </section>
+
+    <!-- Form Kontak -->
+    <section class="section-box">
+        <h2 class="subjudul">Hubungi Saya</h2> <!--subjudul halaman web-->
+        <form action="#" method="post" class="form-kontak"> <!--untuk membuat elemen interaktif-->
+            <label for="nama">Nama:</label> <!--tag untuk memberikan label pada elemen input-->
+            <input type="text" id="nama" name="nama" required> <!--tag untuk membuat berbagai jenis input-->
+
+            <label for="pesan">Pesan:</label> <!--tag untuk memberikan label pada elemen textarea-->
+            <textarea id="pesan" name="pesan" rows="4" required></textarea> <!--tag untuk membuat area teks yang lebih panjang-->
+
+            <button type="submit">Kirim</button> <!--tag untuk membuat tombol-->
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer"> <!--tag yang digunakan untuk menandai bagian bawah pada halama web-->
+        <p>&copy; 2025 Radit - XI RPL 4</p> <!--&copy; 2025 digunakan untuk memunculkan simbol hak cipta-->
+    </footer>
+
+</body>
+</html>
