@@ -68,6 +68,12 @@ h1, h2 {/*untuk memodifikasi judul & subjudul;*/
     height: 150px;/*menentukan tinggi elemen*/
     object-fit: cover;/*mengontrol bagaimana suatu elemen agar menyesuaikan dengan ukuran elemen induknya*/
     border: 3px solid #3498db;/*membuat garis batas di sekitar elemen*/
+    box-shadow: 0 2px 18px rgba(0,0,0,1);/*untuk memberikan efek bayangan di luar elemen*/
+    transition: transform 0.3s ease;/*untuk memberikan efek transisi pada elemen*/
+}
+
+.foto-profil:hover {
+    transform: scale(1.05) rotate(5deg);/*untuk memberikan efek zoom pada elemen saat hover*/
 }
 
 .tabel-biodata {
