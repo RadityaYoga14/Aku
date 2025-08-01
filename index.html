@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Responsive layout di perangakat-->
     <title>Biodata Lengkap Siswa</title> <!--nama dari tab browser-->
     <link rel="stylesheet" href="style.css"> <!--untuk menghubungkan dengan file css external-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 <body> <!--bagian yang akan ditampilkan di web-->
 
@@ -17,7 +19,7 @@
     <br><br><br>
 
     <!-- Biodata Siswa -->
-    <section id="main-container"> <!--untuk mengelompokan tag2 html menjadi satu kelompok, serta diberi id agar bisa di styling khusus-->
+    <section id="main-container" data-aos="fade-right" data-aos-duration="1000"> <!--untuk mengelompokan tag2 html menjadi satu kelompok, serta diberi id agar bisa di styling khusus-->
         <div class="foto-container"> <!--kegunaannya sama seperti section-->
             <img src="Foto Bio.jpeg" alt="Foto Profil" class="foto-profil"> <!--sebuah tag foto, alt digunakan untuk menampilkan deskripsi foto, class digunakan agar bisa di styling khusus-->
         </div>
@@ -56,7 +58,7 @@
     </div>
     
     <!-- Hobi dan Minat -->
-    <section class="section-box">
+    <section class="section-box" data-aos="fade-left" data-aos-duration="1000">
         <h2 class="subjudul">Hobi & Minat</h2> <!--sub judul halaman web-->
         <ul class="list-hobi"> <!--sebuah tag list tak berurut(unordered list)--> 
             <li>Ngoding</li> <!--bagian-bagian di dalam sebuah list-->
@@ -68,7 +70,7 @@
     </section>
 
     <!-- Link Media Sosial -->
-    <section class="section-box"> <!--untuk mengelompokan tag2 html menjadi satu kelompok, serta diberi class agar bisa di styling khusus-->
+    <section class="section-box" data-aos="fade-right" data-aos-duration="1000"> <!--untuk mengelompokan tag2 html menjadi satu kelompok, serta diberi class agar bisa di styling khusus-->
         <h2 class="subjudul">Media Sosial</h2> <!--subjudul halaman web-->
         <p>Kunjungi profil saya:</p> <!--tag paragraph-->
         <a href="https://www.instagram.com/yogaraditya44/" target="_blank" class="tautan">Instagram</a> | <!--sebuah tag link menuju profil instagram, menggunakan target="blank_" agar saat di klik maka akan membuka tab browser baru-->
@@ -76,7 +78,7 @@
     </section>
     
     <!-- Musik dan Film Favorit -->
-    <section class="section-box"> <!--untuk mengelompokan tag2 html menjadi satu kelompok, serta diberi class agar bisa di styling khusus-->
+    <section class="section-box" data-aos="fade-left" data-aos-duration="1000"> <!--untuk mengelompokan tag2 html menjadi satu kelompok, serta diberi class agar bisa di styling khusus-->
         <h2>Fav Music & Fav Movie</h2> <!--subjudul halaman web-->
         <br>
         
@@ -88,7 +90,7 @@
     </section>
 
     <!-- Form Kontak -->
-    <section class="section-box">
+    <section class="section-box" data-aos="fade-up" data-aos-duration="1000">
         <h2 class="subjudul">Hubungi Saya</h2> <!--subjudul halaman web-->
         <form action="#" method="post" class="form-kontak"> <!--untuk membuat elemen interaktif-->
             <label for="nama">Nama:</label> <!--tag untuk memberikan label pada elemen input-->
@@ -105,6 +107,9 @@
     <footer id="footer"> <!--tag yang digunakan untuk menandai bagian bawah pada halama web-->
         <p>&copy; 2025 Radit - XI RPL 4</p> <!--&copy; 2025 digunakan untuk memunculkan simbol hak cipta-->
     </footer>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
