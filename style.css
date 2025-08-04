@@ -31,6 +31,8 @@ h1, h2 {/*untuk memodifikasi judul & subjudul;*/
 /* ID SELECTOR */
 #main-container {
     place-self: center;/**/
+    position: relative;/*mengatur posisi elemen*/
+    right: 0;/*mengatur posisi elemen*/
     background-color: #ffffff95;/*mengubah warna latar belakang*/
     padding: 25px;/*memberikan jarak di dalam elemen*/
     margin-bottom: 20px;/*memberikan jarak di luar elemen bagian bawah*/
@@ -98,6 +100,13 @@ h1, h2 {/*untuk memodifikasi judul & subjudul;*/
     border-radius: 10px;/*digunakan untuk membulatkan sudut² elemen*/
     width: 46vw;/*menentukan lebar sebuah elemen*/
     box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.215);/*untuk memberikan efek bayangan di luar elemen*/
+}
+
+hr.bold-line {
+    border: none; /*menghilangkan garis batas pada elemen*/
+    height: 5px; /*menyesuaikan tinggi untuk ketebalan yang diinginkan*/
+    background-color: #2980b9; /*mengatur warna garis*/
+    margin-bottom: 4px; /*memberikan jarak di bawah elemen*/
 }
 
 .subjudul {
