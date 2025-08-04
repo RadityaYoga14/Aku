@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Responsive layout di perangakat-->
     <title>Biodata Lengkap Siswa</title> <!--nama dari tab browser-->
     <link rel="stylesheet" href="style.css"> <!--untuk menghubungkan dengan file css external-->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> <!--untuk menghubungkan dengan file AOS (Animate On Scroll) CSS untuk efek animasi saat scroll-->
 
 </head>
 <body> <!--bagian yang akan ditampilkan di web-->
@@ -57,16 +57,20 @@
         <div class="cloud cloud4"></div> <!--untuk membuat awan-->
         <div class="cloud cloud5"></div> <!--untuk membuat awan-->
     </div>
+
     <!-- Asal Sekolah -->
-    <section class="section-box" data-aos="fade-left" data-aos-duration="1000">
+    <section class="section-box" data-aos="fade-left" data-aos-duration="1000"> 
         <h2>Asal Sekolah</h2>
-        <p>SMPN 3 Denpasar</p>
+        <b>SMPN 3 Denpasar</b>
         <br>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3944.4136629222658!2d115.22293897501446!3d-8.652149091394875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd23f9a73e1aab3%3A0x8f20bc29e3f23595!2sSMP%20Negeri%203%20Denpasar!5e0!3m2!1sid!2sid!4v1754193470111!5m2!1sid!2sid" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> <!--embed google maps, untuk menampilkan lokasi sekolah-->
+        <br>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3944.4136629222658!2d115.22293897501446!3d-8.652149091394875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd23f9a73e1aab3%3A0x8f20bc29e3f23595!2sSMP%20Negeri%203%20Denpasar!5e0!3m2!1sid!2sid!4v1754193470111!5m2!1sid!2sid" width="100%" height="300" style="border-radius: 12px; border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> <!--embed google maps, untuk menampilkan lokasi sekolah-->
         <br><br>
-        <p>SD Saraswati 6 Denpasar</p>
+        <hr class="bold-line"> <!--garis tebal untuk memisahkan bagian sekolah-->
+        <b>SD Saraswati 6 Denpasar</b>
         <br>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63112.633546101795!2d115.15381984863282!3d-8.64011919999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd23f7a22054c4d%3A0x225ecf48215c391a!2sSD%20Saraswati%206%20Denpasar!5e0!3m2!1sid!2sid!4v1754193658620!5m2!1sid!2sid" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> <!--embed google maps, untuk menampilkan lokasi sekolah-->
+        <br>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63112.633546101795!2d115.15381984863282!3d-8.64011919999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd23f7a22054c4d%3A0x225ecf48215c391a!2sSD%20Saraswati%206%20Denpasar!5e0!3m2!1sid!2sid!4v1754193658620!5m2!1sid!2sid" width="100%" height="300" style="border-radius: 12px; border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> <!--embed google maps, untuk menampilkan lokasi sekolah-->
     </section>
 
     <!-- Hobi dan Minat -->
@@ -92,14 +96,21 @@
     
     <!-- Musik dan Film Favorit -->
     <section class="section-box" data-aos="fade-right" data-aos-duration="1000"> <!--untuk mengelompokan tag2 html menjadi satu kelompok, serta diberi class agar bisa di styling khusus-->
-        <h2>Fav Music & Fav Movie</h2> <!--subjudul halaman web-->
+        <h2>Fav Music | Fav Movie | Fav Drakor</h2> <!--subjudul halaman web-->
         <br>
-
+        <b>Lady Killers II</b>
+        <br><br>
         <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/1xUddpWyEuYl5T3mduKnOJ?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
         <br>
-
+        <hr class="bold-line">
+        <b>Marvel&#39;s Iron Man 3</b>
+        <br><br>
         <iframe width="100%" height="300vh" style="border-radius: 12px;" src="https://www.youtube.com/embed/YLorLVa95Xo" title="Marvel&#39;s Iron Man 3 Domestic Trailer 2 (OFFICIAL)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> <!--embed youtube player, untuk memutar film favorit-->
         <br>
+        <hr class="bold-line">
+        <b>Twinkling Watermelon</b>
+        <br><br>
+        <iframe width="100%" height="300vh" style="border-radius: 12px;" src="https://www.youtube.com/embed/DqceSqn0hiA" title="Semangka Sekejap | Cuplikan Resmi | CJ ENM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> <!--embed youtube player, untuk memutar drakor favorit-->
     </section>
 
     <!-- Form Kontak -->
@@ -120,9 +131,9 @@
     <footer id="footer"> <!--tag yang digunakan untuk menandai bagian bawah pada halama web-->
         <p>&copy; 2025 Radit - XI RPL 4</p> <!--&copy; 2025 digunakan untuk memunculkan simbol hak cipta-->
     </footer>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> <!--untuk menghubungkan dengan file javascript external-->
+    <script> 
+        AOS.init(); //inisialisasi AOS (Animate On Scroll) untuk efek animasi saat scroll
     </script>
 </body>
 </html>
