@@ -37,7 +37,7 @@ h1, h2 {/*untuk memodifikasi judul & subjudul;*/
     padding: 25px;/*memberikan jarak di dalam elemen*/
     margin-bottom: 20px;/*memberikan jarak di luar elemen bagian bawah*/
     border-radius: 12px;/*digunakan untuk membulatkan sudut² elemen*/
-    width: 60vw;/*menentukan lebar sebuah elemen*/
+    width: 95vw;/*menentukan lebar sebuah elemen*/
     box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.215);/*untuk memberikan efek bayangan di luar elemen*/
 }
 
@@ -98,7 +98,7 @@ h1, h2 {/*untuk memodifikasi judul & subjudul;*/
     padding: 20px;/*memberikan jarak di dalam elemen*/
     margin-bottom: 20px;/*memberikan jarak di luar elemen bagian bawah*/
     border-radius: 10px;/*digunakan untuk membulatkan sudut² elemen*/
-    width: 60vw;/*menentukan lebar sebuah elemen*/
+    width: 95vw;/*menentukan lebar sebuah elemen*/
     box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.215);/*untuk memberikan efek bayangan di luar elemen*/
 }
 
@@ -312,4 +312,3 @@ hr.bold-line {
     top: -12px; /*menentukan posisi vertikal elemen*/
     right: 12px; /*menentukan posisi horizontal elemen*/
 }
-
